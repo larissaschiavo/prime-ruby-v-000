@@ -16,7 +16,7 @@ def sieve_eratosthenes(biggest_num)
     break if p*p > biggest_num
     counter += 1
 
-    (p*p).step(max,p) { |m| primes[m] = nil }
+    (p*p).step(biggest_num,p) { |m| primes[m] = nil }
   end
   primes.compact
 end
