@@ -15,4 +15,6 @@ def sieve_eratosthenes(biggest_num)
 
     break if p*p > biggest_num
     counter += 1 
+
+    (p*p).step(max,p) 
 end
