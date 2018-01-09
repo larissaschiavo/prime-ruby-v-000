@@ -17,4 +17,5 @@ def sieve_eratosthenes(biggest_num)
     counter += 1
 
     (p*p).step(max,p) { |m| primes[m] = nil }
+  end 
 end
