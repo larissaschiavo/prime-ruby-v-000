@@ -9,6 +9,9 @@ def sieve_eratosthenes(biggest_num)
   primes = (0..biggest_num).to_a
   primes[0] = primes[1] = nil
 
-  counter = 0 
-  primes.each do
+  counter = 0
+  primes.each do |p|
+    next unless p
+
+    break if p*p > biggest_num
 end
